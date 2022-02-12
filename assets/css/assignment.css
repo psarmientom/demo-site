@@ -1,12 +1,12 @@
 /* Assignment 1 Styles  */
 /* Hero Image  */
 .clean-block.clean-hero::before{
-    background-image: url(/assets/img/assignment/homepage-hero.jpg);
+    background-image: url(https://github.com/psarmientom/demo-site/assets/img/assignment/homepage-hero.jpg);
     background-size: cover;
 }
 /* Blog main image  */
   .post-image{
-    background-image: url(/assets/img/assignment/blog-main.jpg);
+    background-image: url(https://github.com/psarmientom/demo-site/assets/img/assignment/blog-main.jpg);
     background-size: cover;
   }
 h3, h4{
