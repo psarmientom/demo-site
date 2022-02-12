@@ -1,0 +1,60 @@
+*{
+    /* border:solid 3px red; */
+}
+article>div{
+    color:blue;
+}
+h2+p{
+    color:tomato;
+}
+h2~p{
+    color:green;
+}
+div[title="blackbox"], a[href]{
+    background-color: black;
+    color:white;
+}
+[class^="my"]{
+    background-color: gray;
+}
+[class$="Class"]{
+    background-color: yellow;
+}
+[class*="Cl"]{
+    background-color: brown;
+}
+a:link{
+    color:white;
+    text-decoration: none;
+}
+ a:visited{
+    color:red;
+}
+    a:hover{
+    color:green;
+}
+h2:only-child{
+    color:aqua;
+}
+article h2:only-of-type{
+    color:blue;
+}
+ul li:first-child{
+    /* text-decoration: underline; */
+    /* font-size: 3rem; */
+    /* color:white; */
+}
+ul li:last`-child{
+    /* text-decoration: underline; */
+    font-size: 3rem;
+    /* color:white; */
+}
+ul li:nth-child(3){
+    /* text-decoration: underline; */
+}
+/* ul li:nth-child(even){
+    background-color: lightblue;
+} */
+ul li:nth-last-child(3n + 2){
+    background-color: lightblue;
+}
