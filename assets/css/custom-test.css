@@ -11,20 +11,20 @@ h2~p{
     color:green;
 }
 div[title="blackbox"], a[href]{
-    background-color: black;
-    color:white;
+    /* background-color: black; */
+    color:gray;
 }
 [class^="my"]{
-    background-color: gray;
+    /* background-color: gray; */
 }
 [class$="Class"]{
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 [class*="Cl"]{
-    background-color: brown;
+    /* background-color: brown; */
 }
 a:link{
-    color:white;
+    color:gray;
     text-decoration: none;
 }
  a:visited{
@@ -55,6 +55,32 @@ ul li:nth-child(3){
 /* ul li:nth-child(even){
     background-color: lightblue;
 } */
+ul li:nth-child(3n + 2){
+    /* background-color: salmon; */
+}
 ul li:nth-last-child(3n + 2){
-    background-color: lightblue;
+    /* background-color: lightblue; */
+}
+h2:target{
+    /* background-color: black; */
+}
+p:not(article *) {
+    /* border:solid 2px gray; */
+}
+h2:not(:only-child){
+    /* border:solid 2px salmon; */
+}
+p:empty{
+    /* background-color: black; */
+    /* height: 10px; */
+}
+a::before{
+    /* content:"I am a link to "; */
+    /* background-color: aqua; */
+}
+a::after{
+    /* content:" I'm after the link"; */
+}
+article p:first-of-type::first-letter{
+    /* font-size:3rem; */
 }
