@@ -1,14 +1,24 @@
 /* Assignment 1 Styles  */
 /* Hero Image  */
 .clean-block.clean-hero::before{
-    background-image: url(/assets/img/assignment/homepage-hero.jpg);
-    background-size: cover;
-}
-/* Blog main image  */
-  .post-image{
-    background-image: url(/assets/img/assignment/blog-main.jpg);
+    background-image: url(../../assets/img/assignment/homepage-hero-sml.jpg);
     background-size: cover;
   }
-h3, h4{
-    color:#cccccc;
-}
+/* Blog main image  */
+  .post-image{
+    background-image: url(../../assets/img/assignment/blog-main-sml.jpg);
+    background-size: cover;
+  }
+
+  h3, h4{
+    color:#0f0f0f;
+  }
+
+  .img-thumbnail{
+    background-image: url(../../assets/img/assignment/intro-img-sml.jpg);
+  }
+
+
+ /* .rounded img-fluid figure-img{
+
+  }*/
