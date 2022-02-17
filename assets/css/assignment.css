@@ -1,6 +1,7 @@
 /* Assignment 1 Styles  */
 /* Hero Image  */
 .clean-block.clean-hero::before{
+<<<<<<< HEAD
     background-image: url(../../assets/img/assignment/homepage-hero-sml.jpg);
     background-size: cover;
   }
@@ -22,3 +23,16 @@
  /* .rounded img-fluid figure-img{
 
   }*/
+=======
+    background-image: url(../../assets/img/assignment/homepage-hero.jpg);
+    background-size: cover;
+}
+/* Blog main image  */
+  .post-image{
+    background-image: url(../../assets/img/assignment/blog-main.jpg);
+    background-size: cover;
+  }
+h3, h4{
+    color:#cccccc;
+}
+>>>>>>> 13df51dcb9081cf995e6a0fe8a68d9602b4fde81
