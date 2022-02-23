@@ -1,7 +1,7 @@
 /* Assignment 1 Styles  */
 /* Hero Image  */
 .clean-block.clean-hero::before{
-    background-image: url(../../assets/img/assignment/homepage-hero.jpg);
+    background-image: url(../../assets/img/assignment/1.jpg);
     background-size: cover;
 }
 /* Blog main image  */
