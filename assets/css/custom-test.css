@@ -1,8 +1,12 @@
+:root{
+    --brandpink: #4ea186;
+    --sec-color:#cccccc;
+}
 *{
     /* border:solid 3px red; */
 }
 article>div{
-    color:blue;
+    color: var(--brandpink);
 }
 h2+p{
     color:tomato;
@@ -34,7 +38,7 @@ a:link{
     color:green;
 }
 h2:only-child{
-    color:aqua;
+    color: var(--brandpink);
 }
 article h2:only-of-type{
     color:blue;
@@ -50,29 +54,29 @@ ul li:last`-child{
     /* color:white; */
 }
 ul li:nth-child(3){
-    /* text-decoration: underline; */
+    text-decoration: underline;
 }
-/* ul li:nth-child(even){
-    background-color: lightblue;
-} */
-ul li:nth-child(3n + 2){
+ul li:nth-child(even){
+    /* background-color: lightblue; */
+}
+ul li:nth-child(3n + 3){
     /* background-color: salmon; */
 }
 ul li:nth-last-child(3n + 2){
-    /* background-color: lightblue; */
+    background-color: lightblue;
 }
 h2:target{
-    /* background-color: black; */
+    background-color: black;
 }
 p:not(article *) {
-    /* border:solid 2px gray; */
+    border:solid 2px gray;
 }
 h2:not(:only-child){
-    /* border:solid 2px salmon; */
+    border:solid 2px salmon;
 }
 p:empty{
-    /* background-color: black; */
-    /* height: 10px; */
+    background-color: black;
+    height: 10px;
 }
 a::before{
     /* content:"I am a link to "; */
@@ -82,5 +86,8 @@ a::after{
     /* content:" I'm after the link"; */
 }
 article p:first-of-type::first-letter{
-    /* font-size:3rem; */
+    font-size:3rem;
+}
+p::first-line{
+    font-weight: 700;
 }
