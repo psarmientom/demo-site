@@ -1,0 +1,23 @@
+.red {
+  color: tomato;
+}
+.blue {
+  background: rgb(200, 223, 249);
+}
+.padding {
+  padding: 1rem;
+}
+.shopping {
+  background-color: aliceblue;
+  width: 30%;
+  padding: 2rem;
+  line-height: 1.5;
+}
+button {
+  background-color: white;
+  color: black;
+}
+.clicked {
+  background-color: black;
+  color: white;
+}
