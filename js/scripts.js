@@ -196,6 +196,7 @@ const fruitCount = {
 // Getting the specific element on an array 
 // We have a few paragraphs on the html. Let's get them all
 const paragraphs = document.querySelectorAll( "p" )
+console.log(paragraphs)
 // I want to target only the first one, so I target the array I just created and select the element position in the array
 const firstParagraph = paragraphs[ 1 ]
 // Let's do something with this first paragraph 
@@ -224,9 +225,10 @@ myNewArray[0] = "I'm different"
 // Addign a new element to the array by specifying its position.
 // If the position is a bigger number than the array length, empty array elements will be created. 
 myNewArray[9] = "I'm new"
+myNewArray[4] = ""
 myNewArray[7] = "I'm new too"
 console.log(myNewArray)
-console.log("Array length " + myNewArray.length)
+// console.log("Array length " + myNewArray.length)
 
 // Array Methods 
 const shopphingList = ["eggs", "milk", "cheese", "apples", "grapes", "strawberries", "tomatoes", "bread"]
@@ -263,6 +265,7 @@ const myFormattedList = document.querySelector("#formattedShoppingList")
 // Lets add an element at the beginning to make the arrays different.
 myOtherList.unshift("detergent")
 // Display the array on the p tag separated by <br> tags
+// myFormattedList.innerHTML = myOtherList
 myFormattedList.innerHTML = myOtherList.join("<br>")
 // Add some css too 
 myFormattedList.classList.add("shopping")
@@ -274,15 +277,15 @@ function loopCount(){
   console.log("this is a loop")
 }
 // This loop will run 5 times, while i is smaller than 5.
-for (let i = 0; i < 5; i++) {
+for (let i = 0; i < 3; i++) {
     loopCount()
     // I want to see how many times this is logged
     const timesLooped = i + 1
   console.log('The function has run ' + timesLooped + ' times')
   }
 
-// Using if/else inside loops 
-// EWe have this variable with dollar bills values
+// // Using if/else inside loops 
+// // EWe have this variable with dollar bills values
 const dollarBills = [1, 5, 20, 50, 100, 500, 1000, 2000];
 
 for (let i = 0; i < dollarBills.length; i++) {
@@ -297,12 +300,12 @@ for (let i = 0; i < dollarBills.length; i++) {
 }
 
 // Using a for..of loop
-for (let bill of dollarBills) {
-  if (bill < 101) {
-    console.log(bill + ' is a valid dollar bill!')
+for (let item of dollarBills) {
+  if (item < 101) {
+    console.log(item + ' is a valid dollar bill!')
   }
   else{
-    console.log(bill + ' is NOT a valid dollar bill!')
+    console.log(item + ' is NOT a valid dollar bill!')
   }
 }
 
@@ -330,27 +333,28 @@ dollarBills.forEach(bill => {
 // The paragraphs array was declared on line 194 using querySelectorAll 
 paragraphs.forEach(paragraph => paragraph.classList.add("blue"))
 // or using for of
-// for (paragraph of paragraphs) {
-//   paragraph.classList.add('blue')
-// }
+for (paragraph of paragraphs) {
+  paragraph.classList.add('blue')
+}
 
-// ==============Javascript and CSS ==================
-// First select an element on the page 
+// // ==============Javascript and CSS ==================
+// // First select an element on the page 
 const blackSection = document.querySelector(".section2")
-// Using the Style Property 
+// // Using the Style Property 
 blackSection.style.background = "#000"
 blackSection.style.color = "#fff"
 blackSection.style.padding = "1rem"
-// Using the setProperty 
-blackSection.style.setProperty('color', 'red')
-// Using the setAttribute
+blackSection.style.fontSize = "2rem"
+// // Using the setProperty 
+blackSection.style.setProperty('font-size', '3rem')
+// // Using the setAttribute
 blackSection.setAttribute('data-block', 'dark')
 
 
-// ================== EVENT LISTENERS ==================
-// Let's get the button on the HTML
+// // ================== EVENT LISTENERS ==================
+// // Let's get the button on the HTML
 const myButton = document.querySelector('button')
-// Add an event listener for when we click the button
+// // Add an event listener for when we click the button
 myButton.addEventListener('click', function () {
   // Change some CSS
   // myButton.style.toggle.background = "#000"
