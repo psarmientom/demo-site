@@ -349,6 +349,11 @@ blackSection.style.fontSize = "2rem"
 blackSection.style.setProperty('font-size', '3rem')
 // // Using the setAttribute
 blackSection.setAttribute('data-block', 'dark')
+// Adding an id 
+blackSection.setAttribute('id', 'darkSection')
+// Add a class
+// blackSection.setAttribute('class', 'black')
+// but this will replace the existing class
 
 
 // // ================== EVENT LISTENERS ==================
@@ -357,7 +362,7 @@ const myButton = document.querySelector('button')
 // // Add an event listener for when we click the button
 myButton.addEventListener('click', function () {
   // Change some CSS
-  // myButton.style.toggle.background = "#000"
+  // myButton.style.background = "#000"
   // myButton.style.color = "#fff"
   // Better add a class so you can remove it later
   // if (myButton.classList.contains('clicked')) {
@@ -366,5 +371,5 @@ myButton.addEventListener('click', function () {
   //   myButton.classList.add('clicked')
   // }
   // Or even shorter by using toggle
-  myButton.classList.toggle('clicked')
+  // myButton.classList.toggle('clicked')
 })
