@@ -1,9 +1,7 @@
 //=========== Change background 
-// $(".changecolor").css
-// ("background-color", "rgb(24, 71, 151)");
+$(".changecolor").css("background-color", "purple");
 //=========== Change multiple properties 
-// $(".changecolor").css({"color":"yellow",
-// "font-size":"30px"}); 
+$(".changecolor").css({"color":"yellow","font-size":"30px"}); 
 
 //=========== Add a CSS Class
 // $("#addClass").addClass( "gray-bg" );

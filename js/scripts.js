@@ -371,5 +371,5 @@ myButton.addEventListener('click', function () {
   //   myButton.classList.add('clicked')
   // }
   // Or even shorter by using toggle
-  // myButton.classList.toggle('clicked')
+  myButton.classList.toggle('clicked')
 })
