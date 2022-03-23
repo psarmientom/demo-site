@@ -1,14 +1,14 @@
 var options = {
     chart: {
-    //   type: 'line'
+      // type: 'line'
       type: 'bar'
     },
     series: [{
       name: 'sales',
-      data: [30,40,45,50,49,60,70,91,125]
+      data: [30,40,45,50,49,60,70,91,125,45]
     }],
     xaxis: {
-      categories: [1991,1992,1993,1994,1995,1996,1997, 1998,1999]
+      categories: [1991,1992,1993,1994,1995,1996,1997,1998,1999,2000]
     }
   }
   
@@ -19,7 +19,7 @@ var options = {
 //   Heatmap 
 var options = {
     series: [{
-    name: 'Marine Sprite',
+    name: 'Marine',
     data: [44, 55, 41, 37, 22, 43, 21]
   }, {
     name: 'Striking Calf',

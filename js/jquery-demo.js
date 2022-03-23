@@ -1,46 +1,46 @@
 //=========== Change background 
 $(".changecolor").css("background-color", "purple");
 //=========== Change multiple properties 
-$(".changecolor").css({"color":"yellow","font-size":"30px"}); 
+$(".changecolor").css({"color":"yellow","font-size":"30px", "background-color":"red"}); 
 
 //=========== Add a CSS Class
-// $("#addClass").addClass( "gray-bg" );
+$("#addClass").addClass( "gray-bg" );
 //=========== Add multiple CSS Classes
-// $("#addClass").addClass( "gray-bg blue-border" );   
+$("#addClass").addClass( "gray-bg blue-border" );   
 
 //=========== Remove a CSS Class
-// $("#addClass").removeClass ("gray-bg");
+$("#addClass").removeClass ("gray-bg");
 //=========== Remove multiple CSS Classes
-// $("#addClass").removeClass ("gray-bg blue-border"); 
+$("#addClass").removeClass ("gray-bg blue-border"); 
 
 //=========== Replace HTML content
-// $("#addClass").html ("I've been replaced!");
+$("#addClass").html ("I've been replaced!");
 
 //=========== adds content at the beginning
-// $("#addContent p").prepend("This will go at the beginning.<br>");
+$("#addContent p").prepend("This will go at the beginning.<br>");
 //=========== adds content at the end
-// $("#addContent p").append("<br>This will go at the end");
+$("#addContent p").append("<br>This will go at the end");
 
 //=========== adds content before
-// $("#addContent p").before("This will go before.<br>");
+$("#addContent p").before("This will go before.<br>");
 //=========== adds content after
-// $("#addContent p").after("<br>This will go after");
+$("#addContent p").after("<br>This will go after");
 
 //=========== Removes the element
 // $("#addContent p").remove();
 //=========== Empties the element
-// $("#addContent p").empty();
+$("#addContent p").empty();
 
 //=========== Changes width of the element
-// $("#changewidth").width("20rem");
+$("#changewidth").width("20rem");
 //=========== Changes height of the element
-// $("#changewidth").height("20rem");
+$("#changewidth").height("20rem");
 
 //=========== JQuery Events
 //=========== Click
-// $( "#target" ).click(function() { 
-//     $(".clickTarget").addClass( "gray-bg" );
-// });
+$( "#target" ).click(function() { 
+    $(".clickTarget").addClass( "gray-bg" );
+});
 //=========== Double Click
 $("#target").dblclick (function(){
     $(".clickTarget").removeClass( "gray-bg" );
@@ -51,7 +51,7 @@ $("#enterTarget").mouseenter (function(){
 });
 //=========== Mouse Leave
 $("#enterTarget").mouseleave (function(){ 
-    $("#enterTarget").css("background-color", "white");
+    $("#enterTarget").css("background-color", "green");
 });
 
 //=========== On Method
@@ -74,13 +74,13 @@ $( "#effects" ).mouseleave(function() {
     $("#effects p").show();
 });
 //=========== Slide
-// $( "#slideUp" ).click(function(){
-//     $("#slides").slideUp();
-// });
-// $( "#slideDown" ).click(function(){
-//     $("#slides").slideDown();
-// })
-// $( "#toggle" ).click(function(){
-//     $("#slides").slideToggle();
-// })
+$( "#slideUp" ).click(function(){
+    $("#slides").slideUp();
+});
+$( "#slideDown" ).click(function(){
+    $("#slides").slideDown();
+})
+$( "#toggle" ).click(function(){
+    $("#slides").slideToggle();
+})
     
